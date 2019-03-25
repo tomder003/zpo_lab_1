@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.zpo_lab1.FXMLController">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="21.0" layoutY="20.0" prefHeight="284.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nameColumn" prefWidth="205.0" text="Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="151.0" text="E-mail" />
+            <TableColumn fx:id="salaryColumn" prefWidth="98.0" text="Salary" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="dodawanie" layoutX="581.0" layoutY="28.0" mnemonicParsing="false" onAction="#dodawanieClick" text="Add" />
+      <RadioButton fx:id="modyfikacja" layoutX="581.0" layoutY="58.0" mnemonicParsing="false" onAction="#modyfikacjaClick" text="Modify" />
+      <Label layoutX="566.0" layoutY="97.0" text="id" />
+      <Label layoutX="557.0" layoutY="124.0" text="Name" />
+      <Label layoutX="558.0" layoutY="156.0" text="E-mail" />
+      <Label layoutX="557.0" layoutY="185.0" text="Salary" />
+      <TextField fx:id="idField" disable="true" layoutX="593.0" layoutY="91.0" />
+      <TextField fx:id="nameField" layoutX="593.0" layoutY="121.0" />
+      <TextField fx:id="emailField" layoutX="593.0" layoutY="150.0" />
+      <TextField fx:id="salaryField" layoutX="593.0" layoutY="181.0" />
+      <Button fx:id="przycisk" layoutX="655.0" layoutY="217.0" mnemonicParsing="false" onAction="#dodajMod" text="Add / Modify" />
+      <Button fx:id="usunPrzycisk" layoutX="499.0" layoutY="315.0" mnemonicParsing="false" onAction="#usuwanie" text="Delete" />
+   </children>
+</AnchorPane>
